@@ -13,7 +13,7 @@ various measures of political contestation, constraints, democracy, and quality
 of governance indicators.
 
 
-```{r, echo=F, message=FALSE, results='asis'}
+```{r setup, include=FALSE}
 # Load packages
 library(rio)
 library(dplyr)
@@ -27,8 +27,8 @@ sub <- main %>% select(cname, year, ht_region, cam_contest, cam_inclusive, chga_
               h_polcon3, iaep_evp, iaep_lvp, p_polity2, uds_median,
               ti_cpi, wbgi_gee, wbgi_rle, gle_rgdpc)
 
-names(sub) <- c('Country', 'Year', 'Region', 'Contestation', 'Inclusiveness', 
-                'Binary Democracy', 'Constraints', 'Executive Veto Power',
+names(sub) <- c('Country', 'Year', 'Region', 'Political Contestation', 'Political Inclusiveness', 
+                'Binary Democracy', 'Political Constraints', 'Executive Veto Power',
                 'Legislative Veto Power', 'Polity Democracy Score', 
                 'Unified Democracy Score', 
                 'Corruption Perceptions Index', 'Government Effectiveness',
@@ -45,12 +45,14 @@ sub$Region <- factor(sub$Region, levels = 1:10,
                                 'South Asia',
                                 'The Pacific',
                                 'Caribbean'))
+```
 
+```{r motionchart, echo=F, message=FALSE, results='asis'}
 # Create motion chart
 motion <- gvisMotionChart(sub, idvar = 'Country', timevar = 'Year', 
                           colorvar = 'Region', sizevar = 'Real GDP per capita',
                           xvar = 'Unified Democracy Score', 
-                          yvar = 'Contestation')
+                          yvar = 'Electoral Contestation')
 plot(motion)
 ```
 
