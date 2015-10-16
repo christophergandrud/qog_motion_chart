@@ -1,0 +1,51 @@
+---
+title: "Quality of Government Motion Chart"
+author: "Christopher Gandrud"
+date: "19 October 2015"
+output: html_document
+---
+
+
+```{r, echo=F}
+# Load packages
+library(rio)
+library(dplyr)
+library(googleVis)
+
+# Load data
+main <- import('~/Desktop/qog_bas_ts_jan15.csv')
+
+# Keep variables of interest
+sub <- main %>% select(cname, year, ht_region, cam_contest, cam_inclusive, chga_demo, 
+              h_polcon3, iaep_evp, iaep_lvp, p_polity2, uds_median,
+              ti_cpi, wbgi_gee, wbgi_rle, gle_rgdpc)
+
+sub$gle_rgdpc <- log(sub$gle_rgdpc)
+
+names(sub) <- c('country', 'year', 'region', 'Contestation', 'Inclusiveness', 
+                'Binary Democracy', 'Constraints', 'Executive Veto Power',
+                'Legislative Veto Power', 'Polity Democracy Score', 
+                'Unified Democracy Score', 
+                'Corruption Perceptions Index', 'Government Effectiveness',
+                'Rule of Law', 'Real GDP per capita')
+
+sub$region <- factor(sub$region, levels = 1:10, 
+                     labels = c('Eastern Europe/Soviet Union',
+                                'Latin America',
+                                'North Africa/Middle East',
+                                'Sub-Saharan Africa',
+                                'Western Europe/North America',
+                                'East Asia',
+                                'South-East Asia',
+                                'South Asia',
+                                'The Pacific',
+                                'Caribbean'))
+
+# Create motion chart
+motion <- gvisMotionChart(sub, idvar = 'Country', timevar = 'Year', 
+                          colorvar = 'Region', sizevar = 'Real GDP per capita',
+                          xvar = 'Unified Democracy Score', 
+                          yvar = 'Contestation')
+plot(motion)
+```
+
