@@ -54,5 +54,7 @@ motion <- gvisMotionChart(sub, idvar = 'Country', timevar = 'Year',
                           xvar = 'Unified Democracy Score', 
                           yvar = 'Electoral Contestation')
 plot(motion)
+
+print(motion, file = '~/Desktop/test.html')
 ```
 
