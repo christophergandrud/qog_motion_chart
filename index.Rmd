@@ -1,16 +1,21 @@
 ---
-title: "Quality of Government Motion Chart"
-author: "SG1021"
-date: "19 October 2015"
+title: "Measures of Democracy and Quality of Government Motion Chart"
+author: "City University London, Q-Step (SG1021)"
+date: "19-20 October 2015"
 output: 
     html_document:
-        theme: flatly
+        theme: cosmo
 ---
 
-The following motion chart shows data compiled by the [Quality of Government
+<br>
+<br>
+<br>
+<br>
+
+> The following motion chart shows data collated by the [Quality of Government
 Institute](http://qog.pol.gu.se/data/datadownloads/qogbasicdata). It includes
-various measures of political contestation, constraints, democracy, and quality
-of governance indicators.
+measures of political contestation, constraints, democracy, and quality
+of governance indicators. See below for more details.
 
 <!-- jsChart -->  
 <script type="text/javascript" src="js/chart.js"></script>
@@ -20,8 +25,38 @@ of governance indicators.
 <!-- divChart -->
   
 <div id="MotionChartID2e76adbdc90" 
-  style="width: 700; height: 600;">
+  style="width: 800; height: 700;">
 </div>
+<!-- End jsChart -->
+
+# Variable descriptions
+
+## Measures of Democracy
+
+| Variable | Description | Source |
+| -------- | ----------- | ------ |
+| Binary Democracy | A binary measure of democracy where 1 = Democratic and 0 = Non-Democratic. Democracy is determined if there are free and fair elections with multiple parties | (Cheibub et al., 2010) | 
+| Constraints | A continuous measure of how much contestation there is between parties in a political regime | (Coppedge et al., 2008) |
+| Constraints | A continuous measure of how easy it is for one political actor in the government to change policy. Higher scores indicate that it is more difficult. | (Henisz, 2000) |
+| Executive Veto Power | 1 = Government executive can veto (stop) a legislative bill. 0 otherwise | (Regan and Clark, 2010) |
+| Inclusiveness | A continuous measure of how much inclusive a political regime is. | (Coppedge et al., 2008) |
+| Legislative Veto Power | 1 = Legislature can veto (stop) an executive policy change. 0 otherwise | (Regan and Clark, 2010) |
+| Polity Democracy Score | A democracy index ranging from from -10 (absolute monarchy) to 10 (full democracy) | (Marshall and Jaggers, 2013) |
+| Unified Democracy Score | A continuous measure of democracy created by combining 10 other measures. Lower scores indicate less democracy | (Pemstein et al., 2010) | 
+
+
+## Measures of Quality of Government
+
+| Variable | Description | Source |
+| -------- | ----------- | ------ |
+| Corruption Perceptions Index | Index of how corrupt a government is perceived to be. Higher scores indicate lower perceptions of corruption | (Treisman, 2007) |
+| Government Effectiveness | A composite measure of the "inputs" of government effectiveness, e.g. bureaucratic competency and independence. Higher scores indicate higher effectiveness. | (Kaufmann et al., 2010) |
+| Real GDP per capita | Real GDP per Capita in 2005 US dollars | (Gleditsch, 2002) |
+| Rule of Law | Composite measure of whether or not people are confident in and abide by societal rules | (Kaufmann et al., 2010) |
+
+
+For more details please see the original [codebook](http://www.qogdata.pol.gu.se/data/qog_bas_jan15.pdf).
+
 
 
 
