@@ -21,7 +21,7 @@ names(sub) <- c('Country', 'Year', 'Region', 'Contestation', 'Inclusiveness',
                 'Binary Democracy', 'Constraints', 'Executive Veto Power',
                 'Legislative Veto Power', 'Polity Democracy Score', 
                 'Unified Democracy Score', 
-                'Corruption Perceptions Index', 'Government Effectiveness',
+                'Corruption Perceptions Index', 'Government Input Effectiveness',
                 'Rule of Law', 'Real GDP per capita')
 
 sub$Region <- factor(sub$Region, levels = 1:10, 

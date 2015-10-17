@@ -247519,7 +247519,7 @@ data.addColumn('number','Legislative Veto Power');
 data.addColumn('number','Polity Democracy Score');
 data.addColumn('number','Unified Democracy Score');
 data.addColumn('number','Corruption Perceptions Index');
-data.addColumn('number','Government Effectiveness');
+data.addColumn('number','Government Input Effectiveness');
 data.addColumn('number','Rule of Law');
 data.addColumn('number','Real GDP per capita');
 data.addRows(datajson);

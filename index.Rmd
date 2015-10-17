@@ -35,6 +35,8 @@ of governance indicators. See below for more details.
 
 # Variable descriptions
 
+> The following tables give descriptions and sources of the variables included in the motion chart. For more details please see the original Quality of Governance [codebook](http://www.qogdata.pol.gu.se/data/qog_bas_jan15.pdf).
+
 ## Measures of Democracy
 
 | Variable | Description | Source |
@@ -54,12 +56,15 @@ of governance indicators. See below for more details.
 | Variable | Description | Source |
 | -------- | ----------- | ------ |
 | Corruption Perceptions Index | Index of how corrupt a government is perceived to be. Higher scores indicate lower perceptions of corruption | (Treisman, 2007) |
-| Government Effectiveness | A composite measure of the "inputs" of government effectiveness, e.g. bureaucratic competency and independence. Higher scores indicate higher effectiveness. | (Kaufmann et al., 2010) |
-| Real GDP per capita | Real GDP per Capita in 2005 US dollars | (Gleditsch, 2002) |
+| Government Input Effectiveness | A composite measure of the "inputs" of government effectiveness, e.g. bureaucratic competency and independence. Higher scores indicate higher effectiveness. | (Kaufmann et al., 2010) |
 | Rule of Law | Composite measure of whether or not people are confident in and abide by societal rules | (Kaufmann et al., 2010) |
 
+## Other 
 
-For more details please see the original [codebook](http://www.qogdata.pol.gu.se/data/qog_bas_jan15.pdf).
+| Variable | Description | Source |
+| -------- | ----------- | ------ |
+| Real GDP per capita | Real GDP per Capita in 2005 US dollars | (Gleditsch, 2002) |
+
 
 
 
