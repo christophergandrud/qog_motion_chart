@@ -12,49 +12,16 @@ Institute](http://qog.pol.gu.se/data/datadownloads/qogbasicdata). It includes
 various measures of political contestation, constraints, democracy, and quality
 of governance indicators.
 
+<!-- jsChart -->  
+<script type="text/javascript" src="js/chart.js"></script>
 
-```{r setup, include=FALSE}
-# Load packages
-library(rio)
-library(dplyr)
-library(googleVis)
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID2e76adbdc90"></script>
+ 
+<!-- divChart -->
+  
+<div id="MotionChartID2e76adbdc90" 
+  style="width: 700; height: 600;">
+</div>
 
-# Load data
-main <- import('/git_repositories/qog_motion_chart/qog_bas_ts_jan15.csv')
 
-# Keep variables of interest
-sub <- main %>% select(cname, year, ht_region, cam_contest, cam_inclusive, chga_demo, 
-              h_polcon3, iaep_evp, iaep_lvp, p_polity2, uds_median,
-              ti_cpi, wbgi_gee, wbgi_rle, gle_rgdpc)
-
-names(sub) <- c('Country', 'Year', 'Region', 'Political Contestation', 'Political Inclusiveness', 
-                'Binary Democracy', 'Political Constraints', 'Executive Veto Power',
-                'Legislative Veto Power', 'Polity Democracy Score', 
-                'Unified Democracy Score', 
-                'Corruption Perceptions Index', 'Government Effectiveness',
-                'Rule of Law', 'Real GDP per capita')
-
-sub$Region <- factor(sub$Region, levels = 1:10, 
-                     labels = c('Eastern Europe/Soviet Union',
-                                'Latin America',
-                                'North Africa/Middle East',
-                                'Sub-Saharan Africa',
-                                'Western Europe/North America',
-                                'East Asia',
-                                'South-East Asia',
-                                'South Asia',
-                                'The Pacific',
-                                'Caribbean'))
-```
-
-```{r motionchart, echo=F, message=FALSE, results='asis'}
-# Create motion chart
-motion <- gvisMotionChart(sub, idvar = 'Country', timevar = 'Year', 
-                          colorvar = 'Region', sizevar = 'Real GDP per capita',
-                          xvar = 'Unified Democracy Score', 
-                          yvar = 'Electoral Contestation')
-plot(motion)
-
-print(motion, file = '~/Desktop/test.html')
-```
 
