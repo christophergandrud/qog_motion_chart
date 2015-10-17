@@ -13,7 +13,7 @@ output:
 > The following motion chart shows data collated by the [Quality of Government
 Institute](http://qog.pol.gu.se/data/datadownloads/qogbasicdata). It includes
 measures of political contestation, constraints, democracy, and quality
-of governance indicators. See below for more details.
+of governance indicators. See [below](#variable-descriptions) for more details.
 
 <br>
 <br>
