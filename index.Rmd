@@ -26,7 +26,7 @@ of governance indicators. See [below](#variable-descriptions) for more details.
 <!-- divChart -->
   
 <div id="MotionChartID2e76adbdc90" 
-  style="width: 1000; height: 900;">
+  style="width: 800; height: 700;">
 </div>
 <!-- End jsChart -->
 
@@ -41,7 +41,7 @@ of governance indicators. See [below](#variable-descriptions) for more details.
 
 | Variable | Description | Source |
 | -------- | ----------- | ------ |
-| Binary Democracy | A binary measure of democracy where 1 = Democratic and 0 = Non-Democratic. Democracy is determined if there are free and fair elections with multiple parties | (Cheibub et al., 2010) | 
+| Free and fair elections | A binary measure where 1 = free and fair elections with multiple parties, 0 otherwise. | (Cheibub et al., 2010) | 
 | Contestation | A continuous measure of how much contestation there is between parties in a political regime, i.e. how likely it is for all parties to lose an election and control of the government. | (Coppedge et al., 2008) |
 | Constraints | A continuous measure of how easy it is for one political actor in the government to change policy. Higher scores indicate that it is more difficult. | (Henisz, 2000) |
 | Executive Veto Power | 1 = Government executive can veto (stop) a legislative bill. 0 otherwise | (Regan and Clark, 2010) |

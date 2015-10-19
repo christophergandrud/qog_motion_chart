@@ -247512,7 +247512,7 @@ data.addColumn('number','Year');
 data.addColumn('string','Region');
 data.addColumn('number','Contestation');
 data.addColumn('number','Inclusiveness');
-data.addColumn('number','Binary Democracy');
+data.addColumn('number','Free and Fair Elections');
 data.addColumn('number','Constraints');
 data.addColumn('number','Executive Veto Power');
 data.addColumn('number','Legislative Veto Power');
