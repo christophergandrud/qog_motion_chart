@@ -26,7 +26,7 @@ of governance indicators. See [below](#variable-descriptions) for more details.
 <!-- divChart -->
   
 <div id="MotionChartID2e76adbdc90" 
-  style="width: 800; height: 700;">
+  style="width: 1000; height: 900;">
 </div>
 <!-- End jsChart -->
 
@@ -42,10 +42,10 @@ of governance indicators. See [below](#variable-descriptions) for more details.
 | Variable | Description | Source |
 | -------- | ----------- | ------ |
 | Binary Democracy | A binary measure of democracy where 1 = Democratic and 0 = Non-Democratic. Democracy is determined if there are free and fair elections with multiple parties | (Cheibub et al., 2010) | 
-| Constraints | A continuous measure of how much contestation there is between parties in a political regime | (Coppedge et al., 2008) |
+| Contestation | A continuous measure of how much contestation there is between parties in a political regime, i.e. how likely it is for all parties to lose an election and control of the government. | (Coppedge et al., 2008) |
 | Constraints | A continuous measure of how easy it is for one political actor in the government to change policy. Higher scores indicate that it is more difficult. | (Henisz, 2000) |
 | Executive Veto Power | 1 = Government executive can veto (stop) a legislative bill. 0 otherwise | (Regan and Clark, 2010) |
-| Inclusiveness | A continuous measure of how much inclusive a political regime is. | (Coppedge et al., 2008) |
+| Inclusiveness | A continuous measure of how inclusive a political regime is, i.e. the extent to which alternative parties are included in the political regime. | (Coppedge et al., 2008) |
 | Legislative Veto Power | 1 = Legislature can veto (stop) an executive policy change. 0 otherwise | (Regan and Clark, 2010) |
 | Polity Democracy Score | A democracy index ranging from from -10 (absolute monarchy) to 10 (full democracy) | (Marshall and Jaggers, 2013) |
 | Unified Democracy Score | A continuous measure of democracy created by combining 10 other measures. Lower scores indicate less democracy | (Pemstein et al., 2010) | 
@@ -57,7 +57,7 @@ of governance indicators. See [below](#variable-descriptions) for more details.
 | -------- | ----------- | ------ |
 | Corruption Perceptions Index | Index of how corrupt a government is perceived to be. Higher scores indicate lower perceptions of corruption | (Treisman, 2007) |
 | Government Input Effectiveness | A composite measure of the "inputs" of government effectiveness, e.g. bureaucratic competency and independence. Higher scores indicate higher effectiveness. | (Kaufmann et al., 2010) |
-| Rule of Law | Composite measure of whether or not people are confident in and abide by societal rules | (Kaufmann et al., 2010) |
+| Rule of Law | Composite measure of the extent to which people are confident in and abide by societal rules | (Kaufmann et al., 2010) |
 
 ## Other 
 
